@@ -2,7 +2,7 @@ const details = gsap.utils.toArray(".desktopContentSection:not(:first-child)")
 const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)")
 
 
-gsap.set(photos, {yPercent:100})
+gsap.set(photos, {yPercent:-100,opacity:0.5})
 
 const allPhotos = gsap.utils.toArray(".desktopPhoto")
 
@@ -30,7 +30,7 @@ details.forEach((detail, index)=> {
 
 	let headline = detail.querySelector("h3")
 	let animation = gsap.timeline()
-	   .to(photos[index], {yPercent:0})
+	   .to(photos[index], {yPercent:0,opacity:1})
 	   .set(allPhotos[index], {autoAlpha:0})
 	ScrollTrigger.create({
 		trigger:headline,
@@ -51,10 +51,27 @@ details.forEach((detail, index)=> {
 });
 
 
+let tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:'#about',
+        start:'top 70%',
+        end:'top 20%',
+        ease:'none',
+        scrub:true,
+        // markers:true
+    }
+});
 
-
-
-
+tl.from('.zoom',{
+    opacity:0,
+    scale:0
+})
+tl.from('#about h2',{
+    x:-800,
+},'<')
+tl.from('#about h4',{
+    x:-800
+},'<')
 
 
 

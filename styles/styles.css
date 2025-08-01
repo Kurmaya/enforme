@@ -17,7 +17,9 @@ h1{
 h3{
     font-weight: 100;
 }
-
+p{
+    line-height: 1.5;
+}
 :root{
  --primary: #a48d78;
  --secondary:#c8b9a4;
@@ -50,7 +52,7 @@ nav{
 }
 .logo{
     width: 120px;
-    height: 80px;
+    height: 100px;
     position: relative;
 }
 .logo img{
@@ -58,7 +60,8 @@ nav{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding:.5rem;
+    margin-top:-5px;
+    /* padding:.5rem; */
 }
 .navbar{
     display: flex;
@@ -100,14 +103,19 @@ a{
     justify-content: space-between;
     align-items: center;
     transition: .3s ease;
-    background: var(--secondary);
+    background: var(--mist);
+    cursor: pointer;
 }
 .sticky-cta img{
-    width: 30px;
+    width: 28px;
     object-fit: contain;
+    transition: .3s ease;
 }
 .sticky-cta.active{
     left:0;
+}
+.sticky-cta.active:hover > img{
+    transform: translateX(-15px) rotateY(180deg);
 }
 .sticky-cta.active > img{
     transform: rotateY(180deg) translateX(10px);
@@ -117,6 +125,10 @@ a{
     /* width: 0; */
     /* opacity: 0; */
     border-radius: 0;
+    border: 0;
+}
+.sticky-cta:hover > img{
+transform: translateX(3px);
 }
 section{
     width: 100%;
@@ -308,10 +320,132 @@ filter: brightness(.5);
 
 
 
-
-
-
-/* defines styles for screens up to 599px wide */
+/* services section */
+.service-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    width: 100%;
+    padding:1rem;
+    gap:40px 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    gap:10px;
+    text-align: center;
+    border: 2px solid var(--oat);
+    border-radius: 20px;
+    
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background: var(--mist);
+}
+.card p{
+    width: 80%;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.card h3{
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+.card span,.card h3{
+    font-weight: 600;
+}
+.card span{
+    color:var(--primary);
+    font-size: 1.5rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+footer p{
+    font-weight: 300;
+    margin:20px auto;
+    font-size: .8rem;
+}
+#news {
+/* background-image: url('../assets/images/home-1-background-4.webp')!important; */
+display: grid;
+place-items: center;
+}
+#news .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .5;
+}
+.holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.left-holder{
+    width: 30vw;
+    height: 500px;
+    position: relative;
+}
+.left-holder img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.right-holder{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left:40px;
+    gap:10px;
+}
+.right-holder h2{
+    color:var(--primary);
+}
+.right-holder h4{
+    color:var(--primary);
+    font-size: 1.5rem;
+}
+.right-holder p{
+    color:var(--secondary);
+    font-size: 1.1rem;
+}
+.form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:5px;
+    margin-top:20px;
+}
+.form input{
+    width: 250px;
+    padding:1rem;
+    border-radius: 30px;
+    border: 0;
+}
+.form button{
+    width: 150px;
+    padding: 1rem;
+    border-radius: 30px;
+    border: 0;
+    background: var(--oat);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Lato',sans-serif;
+}
 @media screen and (max-width: 599px) {
 	.left {
 		display:none;
