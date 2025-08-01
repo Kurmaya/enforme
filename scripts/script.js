@@ -1,5 +1,9 @@
 const cta = document.querySelector('.sticky-cta');
-
+const close = document.querySelector('.close');
+close.addEventListener('click',()=>{
+    close.classList.toggle('active');
+    document.querySelector('.nav-links').classList.toggle('active');
+})
 
 
 
