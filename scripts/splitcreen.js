@@ -18,7 +18,7 @@ mm.add("(min-width: 600px)", () => {
 	
   ScrollTrigger.create({
 	trigger:".gallery",
-	start:"top top",
+	start:"top 10%",
 	end:"bottom bottom",
 	pin:".right"
 })
@@ -38,7 +38,8 @@ details.forEach((detail, index)=> {
 		end:"top 45%",
 		animation:animation,
 		scrub:true,
-		markers:false
+		markers:true,
+    pinSpacing:false
 	})
 })
 	
