@@ -5,6 +5,9 @@
  --mist:#f4f1ea;
  --white:#faf9f6;
 }
+#faqs{
+  background: var(--white)!important;
+}
 .container {
   margin: 0 auto;
   padding: 4rem;

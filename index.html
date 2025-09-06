@@ -67,7 +67,7 @@
     </section>
     <section id="about">
 <div class="wrapper">
-    <img class="zoom" src="./assets/images/logo.png" alt="">
+    <!-- <img class="zoom" src="./assets/images/logo.png" alt=""> -->
     <div class="img-wrap">
         <div class="top"></div>
         <div class="bottom"></div>
@@ -90,7 +90,45 @@
 
 </div>
     </section>
-    <section id="third">
+   
+    <section id="services">
+        <div class="wrapper">
+            <h2>Services</h2>
+<div class="service-wrapper">
+   <div class="card">
+        <img src="./assets/images/place.jpg" alt="">
+        <h3>Womb Reiki </h3>
+        
+        <button><a href="">Learn More</a></button>
+
+    </div>
+      
+       <div class="card">
+        <img src="./assets/images/place2.jpg" alt="">
+        <h3>Full Body Reiki</h3>
+        
+        <button><a href="">Learn More</a></button>
+
+    </div>
+       <div class="card">
+        <img src="./assets/images/place3.jpg" alt="">
+        <h3>Absent Reiki (Distant Reiki) </h3>
+        
+        
+        <button><a href="">Learn More</a></button>
+
+    </div>
+    <div class="card">
+        <img src="./assets/images/place4.jpg" alt="">
+        <h3>4-Session Package </h3>
+        
+        <button><a href="">Learn More</a></button>
+
+    </div>
+</div>
+        </div>
+    </section>
+     <section id="third">
         <div class="wrapper">
             <!-- <div class="spacer"></div> -->
             
@@ -136,7 +174,7 @@
                 <a href=""><button>Learn More</button></a>
 
 			<div class="mobilePhoto green">
-                <img src="./assets/images/place1.jpg" alt="">
+                <img src="./assets/images/place.jpg" alt="">
             </div>
 	<h3>Full Body Reiki </h3>
 				<p> A holistic session that restores energy balance throughout your entire system
@@ -179,43 +217,6 @@
 
 </div>
     </section>
-    <section id="services">
-        <div class="wrapper">
-            <h2>Services</h2>
-<div class="service-wrapper">
-   <div class="card">
-        <img src="./assets/images/place.jpg" alt="">
-        <h3>Womb Reiki </h3>
-        
-        <button><a href="">Learn More</a></button>
-
-    </div>
-      
-       <div class="card">
-        <img src="./assets/images/place2.jpg" alt="">
-        <h3>Full Body Reiki</h3>
-        
-        <button><a href="">Learn More</a></button>
-
-    </div>
-       <div class="card">
-        <img src="./assets/images/place3.jpg" alt="">
-        <h3>Absent Reiki (Distant Reiki) </h3>
-        
-        
-        <button><a href="">Learn More</a></button>
-
-    </div>
-    <div class="card">
-        <img src="./assets/images/place4.jpg" alt="">
-        <h3>4-Session Package </h3>
-        
-        <button><a href="">Learn More</a></button>
-
-    </div>
-</div>
-        </div>
-    </section>
     <section id="testimonials">
         <img class="bg" src="./assets/images/must_use.jpg" alt="">
         <div class="wrapper">
@@ -234,7 +235,18 @@
         </p>
         <h3>- Kyle, New York</h3>
     </div>
-     
+    
+        <div class="swiper-slide">
+        <p>" After visiting EnForme Reiki I felt rejuvenated, Jaiyla's skilled hands and intuitive touch hit exactly where I needed them to. She took her time, asked me questions during the session, I even felt so relaxed I fell asleep! It was almost like a hands-free massage except you leave feeling cleansed, energized, and centered. <br> 1000% will be booking with her again, sending so much love and many blessings to her and her continued business "
+</p>
+<h3>- Ryann, New Jersey</h3>
+</div>
+      <div class="swiper-slide">
+        <p>
+           " This was my first Reiki session EVER and it will certainly not be my last. Jaiyla created a relaxing and rejuvenating place for me to start my recovery. I recently injured my hand and she took the most care in making sure to provide relief without agitation. I had the coolest & weirdest feeling of a spool unwinding in my head - it was like she was literally pulling negative energy out of me. "
+        </p>
+        <h3>- Kyle, New York</h3>
+    </div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -266,16 +278,17 @@
     <footer>
         <div class="footer-container">
   <div class="footer-wrap">
-            <div class="logo">
-            <img src="./assets/images/logo.png" alt="">
-        </div>
+          
             <h4>Jaiyla Robinson, Reiki Practitioner</h4>
         <span>“Intentional healing, anywhere you are.”</span>    
         <strong><em>Balance. Restore. Renew.</em></strong>
-        
+          <div class="logo">
+            <img src="./assets/images/logo.png" alt="">
         </div>
+        </div>
+        
         <div class="footer-socials">
-            <h3>BY APPOINTMENT ONLY</h3>
+            <h3>By Appointment Only</h3>
             <h4>(646) 801-0833</h4>
             <h4><a style="color:black;" href="mailto:info.enforme@gmail.com">info.enforme@gmail.com</a></h4>
             <a href="https://www.instagram.com/enforme.reiki?igsh=ZTB6aHZ5ZW0xNWhv" target="_blank"><img src="./assets/icons/instagram.png" alt=""></a>
@@ -288,6 +301,9 @@
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script>
     var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 2,
+      spaceBetween: 30,
+      loop:true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

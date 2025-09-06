@@ -18,7 +18,7 @@ mm.add("(min-width: 600px)", () => {
 	
   ScrollTrigger.create({
 	trigger:".gallery",
-	start:"top 10%",
+	start:"top 30%",
 	end:"bottom bottom",
 	pin:".right"
 })
@@ -63,10 +63,10 @@ let tl = gsap.timeline({
     }
 });
 
-tl.from('.zoom',{
-    opacity:0,
-    scale:0
-})
+// tl.from('.zoom',{
+//     opacity:0,
+//     scale:0
+// })
 tl.from('#about h2',{
     x:-800,
 },'<')
