@@ -38,7 +38,7 @@ details.forEach((detail, index)=> {
 		end:"top 45%",
 		animation:animation,
 		scrub:true,
-		markers:true,
+		markers:false,
     pinSpacing:false
 	})
 })
