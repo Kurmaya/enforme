@@ -877,6 +877,9 @@ place-items: center;
     flex-direction: column;
     gap: 20px;
 }
+.text-hold ul{
+    margin-left:30px;
+}
 .offerings{
     display: flex;
 }
