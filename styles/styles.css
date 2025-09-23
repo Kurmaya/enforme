@@ -84,14 +84,15 @@ button{
 .buttons button{
     /* background-color: var(--primary); */
     /* background: var(--teal); */
-    background: transparent;
-    color:var(--amber);
+    /* background: transparent; */
+    background-color: var(--amber);
+    color:var(--white);
     cursor: pointer;
     border: 2px solid var(--amber);
 }
 .buttons button:hover{
-    background:var(--amber);
-    color:var(--white);
+    background:var(--white);
+    color:var(--amber);
     border-color: var(--amber);
 }
 
@@ -395,20 +396,20 @@ filter: brightness(.5);
 .desktopContentSection button{
     width: auto;
     padding:1rem;
-    background-color: var(--mist);
-    background: transparent;
+    background-color: var(--brown);
+    /* background: transparent; */
     border-radius: 30px;
     font-family: 'Lato',sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    border: 2px solid var(--amber);
-    color:var(--amber);
+    border: 2px solid var(--brown);
+    color:var(--white);
     cursor: pointer;
     /* color:var(--oat); */
 }
 .desktopContentSection button:hover{
-background: var(--amber);
-color:var(--white);
+background: var(--white);
+color:var(--brown);
 }
 .desktopPhotos {
 	width: 35vw;
@@ -470,7 +471,7 @@ filter: brightness(.6) sepia(.6);
 /* services section */
 #services h2,#testimonials h2{
     margin:20px auto 10px auto;
-    color: var(--primary);
+    color: var(--brown);
     font-size:3rem;
 }
 #testimonials h2{
@@ -1240,16 +1241,16 @@ form button{
     padding: 1rem;
     border-radius: 30px;
     border: 0;
-    background: transparent;
+    background: var(--teal);
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Lato',sans-serif;
-    color:var(--amber);
+    color:var(--white);
     cursor: pointer;
-    border:2px solid var(--amber);
+    /* border:2px solid var(--amber); */
 }
 form button:hover{
-    background: var(--amber);
+    background: var(--darkteal);
     color:var(--white);
 }
 @media screen and (max-width: 599px) {
