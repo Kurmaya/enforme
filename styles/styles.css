@@ -1036,6 +1036,7 @@ place-items: center;
     background: var(--mist);
     padding: 1rem ;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .more{
@@ -1322,6 +1323,9 @@ form button:hover{
     }
     #about h4{
         width: 90%;
+    }
+    #all-services h3{
+        width: 85%;
     }
 .service-wrapper{
     grid-template-columns: 1fr;
