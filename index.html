@@ -7,11 +7,16 @@
     <link rel="shortcut icon" href="./assets/images/logo-only.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styles.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <meta name="description" content="Reduce stress, release tension, and restore emotional balance with Reiki."/> 
-   <meta name="description" content="Experience deep relaxation and clarity—sessions for stress, sleep, and wellness."/> 
+   <!-- <meta name="description" content="Reduce stress, release tension, and restore emotional balance with Reiki."/>  -->
+   <meta name="description" content="Reiki Energy Healing for Stress Relief, Balance, and Emotional Wellness | En Forme Reiki"/> 
+   <meta name="keywords" content="benefits of reiki for stress, burnout relief, energy healing for mental health, natural anxiety relief methods"/>
+   <meta name="robots" content="index">
+   <!-- <link rel="canonical" href="https://www.example.com/page.html"> -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
     <nav>
@@ -53,12 +58,12 @@
                 </a>
             </ul>
             
-                <a href="https://calendly.com/info-enforme/10-minute-consultation" class="cta"><button>Schedule a Free Consultation</button></a>
+                <a  class="cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/info-enforme/10-minute-consultation'});return false;"><button>Schedule a Free Consultation</button></a>
             
         </div>
     </nav>
     <div class="sticky-cta">
-        <a href="" class="cta"><button>Reserve Your Session</button></a>
+        <a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/d/cwfh-nrc-zv4?background_color=f6f3ec&text_color=4b3b35&primary_color=8b7159'});return false;" class="cta"><button>Reserve Your Session</button></a>
         <img src="./assets/icons/right-arrow.png" alt="">
     </div>
     <section id="hero">
@@ -146,7 +151,7 @@
 <div class="service-wrapper">
    <div class="card flip-card">
     <div class="front">
-<img src="./assets/images/womb.jpg" alt="">
+<img src="./assets/images/womb.jpg" alt="En Forme Reiki Womb Reiki | Sacral Healing">
         <h3>Womb Reiki </h3>
     </div>
     <div class="back">
@@ -334,6 +339,10 @@ bringing calm, clarity, and energetic support to your mind and body.
         280:{
             slidesPerView:1,
 
+        },
+        1000:{
+            slidesPerView:2,
+            spaceBetween:30
         }
       },
       loop:true,

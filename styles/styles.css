@@ -820,6 +820,15 @@ place-items: center;
         text-align: center;
         /* font-family: 'Lato',sans-serif; */
     }
+    #services-hero h3{
+        font-size: 1.2rem;
+        position: absolute;
+        color: white;
+        top:75%;
+        left:50%;
+        transform: translate(-50%,-75%);
+        text-align: center;
+    }
     #about,#about-enforme,#contact{
         background: var(--secondary);
         height: 100%!important;
